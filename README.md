@@ -1,8 +1,7 @@
 # Candy-Ranking-Stats
-Try to see if there is correlation of type of candy to ranking of candy. 
+Using candy data to learn how to use Flask and Bokeh charting.
 
 
 
 
-
-Source of data: https://github.com/klosinm/data/tree/master/candy-power-ranking
+Source of data: https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking
