@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.2.min.js" integrity="sha384-JayppSWSRBsibIZqI8S4vAb1oFgLL0uhNvSn8cmArlOvYOwfFjYeyY5UWwJ+K0SU" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="dd82375f-863e-403b-bf66-4e84a9180427" data-root-id="2997"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3091">
+          {"6e5b3d8e-e535-4605-bcd0-d42e35bfde5a":{"roots":{"references":[{"attributes":{"axis":{"id":"3008"},"grid_line_color":null,"ticker":null},"id":"3010","type":"Grid"},{"attributes":{},"id":"3006","type":"LinearScale"},{"attributes":{},"id":"3012","type":"BasicTicker"},{"attributes":{"start":0},"id":"3002","type":"DataRange1d"},{"attributes":{},"id":"3004","type":"CategoricalScale"},{"attributes":{"formatter":{"id":"3025"},"major_label_orientation":"vertical","ticker":{"id":"3009"}},"id":"3008","type":"CategoricalAxis"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":5},"x":{"field":"x"}},"id":"3017","type":"VBar"},{"attributes":{"factors":["Reese\u00d5s Peanut Butter cup","Reese\u00d5s Miniatures","Twix","Kit Kat","Snickers","Reese\u00d5s pieces","Milky Way","Reese\u00d5s stuffed with pieces","Peanut butter M&amp;M\u00d5s","Nestle Butterfinger","Peanut M&amp;Ms","3 Musketeers","Starburst","100 Grand","M&amp;M\u00d5s","Nestle Crunch","Rolo","Milky Way Simply Caramel","Skittles original","Hershey\u00d5s Krackel","Milky Way Midnight","Sour Patch Kids","Snickers Crisper","Hershey\u00d5s Special Dark","Junior Mints","Haribo Gold Bears","Baby Ruth","Hershey\u00d5s Milk Chocolate","Hershey\u00d5s Kisses","Nerds","Skittles wildberry","Milk Duds","Swedish Fish","Mr Good Bar","Lifesavers big ring gummies","Sour Patch Tricksters","Air Heads","Haribo Sour Bears","Almond Joy","Tootsie Roll Snack Bars","Whoppers","Tootsie Pop","Mounds","Trolli Sour Bites","Gobstopper","Mike &amp; Ike","Payday","One quarter","Smarties candy","Tootsie Roll Midgies","Twizzlers","Welch\u00d5s Fruit Snacks","Fruit Chews","Tootsie Roll Juniors","Runts","Dots","Haribo Twin Snakes","Werther\u00d5s Original Caramel","Laffy Taffy","Pop Rocks","Dum Dums","Now &amp; Later","Fun Dip","Lemonhead","Warheads","Charleston Chew","Candy Corn","Nestle Smarties","Pixie Sticks","Red vines","Chewey Lemonhead Fruit Mix","Ring pop","Sixlets","Strawberry bon bons","Caramel Apple Pops","Haribo Happy Cola","Sugar Babies","One dime","Sugar Daddy","Root Beer Barrels","Jawbusters","Super Bubble","Chiclets","Boston Baked Beans","Nik L Nip"]},"id":"3000","type":"FactorRange"},{"attributes":{"below":[{"id":"3008"}],"center":[{"id":"3010"},{"id":"3014"}],"left":[{"id":"3011"}],"outline_line_cap":"round","outline_line_color":"purple","plot_height":500,"renderers":[{"id":"3019"}],"title":{"id":"2998"},"toolbar":{"id":"3015"},"toolbar_location":null,"x_range":{"id":"3000"},"x_scale":{"id":"3004"},"y_range":{"id":"3002"},"y_scale":{"id":"3006"}},"id":"2997","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3023","type":"BasicTickFormatter"},{"attributes":{},"id":"3009","type":"CategoricalTicker"},{"attributes":{"data":{"top":{"__ndarray__":"73IR34kLVUCWOzPBcHdUQP8Iw4AlaVRAKe0NvjAxU0CKqIk+HytTQJIFTODWW1JAuAchIF9GUkB8Rbde0zhSQE9AE2HD3VFAMSb9vRSvUUCgjPFh9l5RQDBl4ICW5lBAfVpFf2jCUEAp7Q2+ML5QQGvxKQDGpFBAZ7gBnx+eUEBKJTyh121QQJgXYB+dFlBAbcoV3uWKT0CtqpffaSRPQPBv0F59Zk5AmueIfJfuTUAKMCx/vsNNQNzu5T45nk1A8tJNYhCcTEDzAuyjU49MQNTTR+APdUxA4dOcvMg+TECCk23gDrBLQMqjG2FRrUtAHeG04EWNS0BuS+SCM4hLQOmcn+I4bktAJ/kRv2JDS0AE6zh+qHRKQFqdnKG4aUpARN0HILUrSkDU8ZiByrRJQIXtJ2N8LElAQGt+/KXTSEBINIEiFsNIQNwwCoLHfUhA09wKYTXqR0AB3CxeLJZHQImxTL9EZEdAtp4hHLM0R0C9i/fj9iVHQAVpxqLpDkdApbxWQnf/RkBbsirCTd5GQFNb6iCvu0ZAaAOwAREwRkAt6pPcYYtFQHHl7J3RiEVAHcwmwLBsRUBkA+li0yJFQGK4OgDiFkVAbsFSXcDzREDFdvcA3bFEQDfdskP8oURAAP2+f/O6Q0Ap7Q2+MLlDQEsfuqC+l0NAyXN9Hw6SQ0CjcajfhYFDQOqxLQPOfENAqDtPPGcBQ0Crs1pgj/FCQJpcjIF13EJA3/dvXpysQkA4v2GiQQJCQNKOG343pUFAI9v5fmpcQUDT1ohgHEpBQFth+l5DQkFAArhZvFgUQUCyLm6jAbhAQMO4G0RrIUBAD0WBPpEdQEBSfecXJbQ9QCY8odefIDxAKGa9GMpNO0DeyhKdZYY4QOF7f4P2ajdAZJEm3gFyNkA=","dtype":"float64","order":"little","shape":[85]},"x":["Reese\u00d5s Peanut Butter cup","Reese\u00d5s Miniatures","Twix","Kit Kat","Snickers","Reese\u00d5s pieces","Milky Way","Reese\u00d5s stuffed with pieces","Peanut butter M&amp;M\u00d5s","Nestle Butterfinger","Peanut M&amp;Ms","3 Musketeers","Starburst","100 Grand","M&amp;M\u00d5s","Nestle Crunch","Rolo","Milky Way Simply Caramel","Skittles original","Hershey\u00d5s Krackel","Milky Way Midnight","Sour Patch Kids","Snickers Crisper","Hershey\u00d5s Special Dark","Junior Mints","Haribo Gold Bears","Baby Ruth","Hershey\u00d5s Milk Chocolate","Hershey\u00d5s Kisses","Nerds","Skittles wildberry","Milk Duds","Swedish Fish","Mr Good Bar","Lifesavers big ring gummies","Sour Patch Tricksters","Air Heads","Haribo Sour Bears","Almond Joy","Tootsie Roll Snack Bars","Whoppers","Tootsie Pop","Mounds","Trolli Sour Bites","Gobstopper","Mike &amp; Ike","Payday","One quarter","Smarties candy","Tootsie Roll Midgies","Twizzlers","Welch\u00d5s Fruit Snacks","Fruit Chews","Tootsie Roll Juniors","Runts","Dots","Haribo Twin Snakes","Werther\u00d5s Original Caramel","Laffy Taffy","Pop Rocks","Dum Dums","Now &amp; Later","Fun Dip","Lemonhead","Warheads","Charleston Chew","Candy Corn","Nestle Smarties","Pixie Sticks","Red vines","Chewey Lemonhead Fruit Mix","Ring pop","Sixlets","Strawberry bon bons","Caramel Apple Pops","Haribo Happy Cola","Sugar Babies","One dime","Sugar Daddy","Root Beer Barrels","Jawbusters","Super Bubble","Chiclets","Boston Baked Beans","Nik L Nip"]},"selected":{"id":"3026"},"selection_policy":{"id":"3027"}},"id":"3016","type":"ColumnDataSource"},{"attributes":{},"id":"3027","type":"UnionRenderers"},{"attributes":{"source":{"id":"3016"}},"id":"3020","type":"CDSView"},{"attributes":{},"id":"3026","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":5},"x":{"field":"x"}},"id":"3018","type":"VBar"},{"attributes":{"data_source":{"id":"3016"},"glyph":{"id":"3017"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3018"},"selection_glyph":null,"view":{"id":"3020"}},"id":"3019","type":"GlyphRenderer"},{"attributes":{"text":"Ranking of Candy"},"id":"2998","type":"Title"},{"attributes":{"formatter":{"id":"3023"},"ticker":{"id":"3012"}},"id":"3011","type":"LinearAxis"},{"attributes":{"axis":{"id":"3011"},"dimension":1,"ticker":null},"id":"3014","type":"Grid"},{"attributes":{},"id":"3025","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"3015","type":"Toolbar"}],"root_ids":["2997"]},"title":"Bokeh Application","version":"2.2.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3091').textContent;
+                  var render_items = [{"docid":"6e5b3d8e-e535-4605-bcd0-d42e35bfde5a","root_ids":["2997"],"roots":{"2997":"dd82375f-863e-403b-bf66-4e84a9180427"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
