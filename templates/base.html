@@ -3,13 +3,25 @@
 
 <style>
   
+  .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
 
 footer {
+  
     height: 150px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
   background: #3f8cff;
   color: white;
  border-top: 5px solid #0748aa;   
 }
+
+
 
 
 
@@ -64,19 +76,12 @@ footer {
 </body>
 
 <footer class="navbar-fixed-bottom">
-   
-
-
     <div class="container-fluid text-center text-md-left">
         <!-- Grid row -->
-        <div class="row">
-         
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+        <div class="row" style="margin-top:15px;">
+   
                 <!-- Links -->
-                <h5 >Contact Information</h5>
-                <ul class="list-unstyled"> 
+                <ul class="list-unstyled list-inline text-center py-2" > 
                     <li>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
@@ -88,21 +93,22 @@ footer {
 
                     <li>
                         
-                    <p>
+                    <li >
                          <a href="https://github.com/klosinm">
-                            <img  src="{{url_for('static', filename='Images/github.png')}}" width="11%" style="margin-right:5px">
+                            <img  src="{{url_for('static', filename='Images/Octocat.png')}}" width="4%" style="margin-right:5px">
                         </a>
                    
                         <a href="https://www.linkedin.com/in/monica-klosin-476316b6/">
-                            <img src="{{url_for('static', filename='Images/link.png')}}" width="13%" style="margin-top:4px">
+                            <img src="{{url_for('static', filename='Images/link.png')}}" width="4%" style="margin-top:4px">
                         </a>
-                    </p>
+                    </li>
 
+                    <li style="margin-top:5px; font-size: x-small;color: #0748aa;">
+                            Last Updated: October 19th, 2020
                     </li>
                     
                 </ul>
-            </div>
-            <!-- Grid column --> 
+        
         </div>
         <!-- Grid row -->
     </div>
