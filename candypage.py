@@ -38,7 +38,7 @@ def user(name):
 
 
 if __name__ == "__main__":
-    #app.run('0.0.0.0', 9001)
-    app.run(debug=True)
+    app.run('0.0.0.0', 9001)
+    #app.run(debug=True)
 
 
