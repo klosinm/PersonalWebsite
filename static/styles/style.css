@@ -1,0 +1,20 @@
+ .Header {
+     font-size: x-large;
+     color: #3f8cff;
+     font-style: bold;
+ }
+
+ .subHeader {
+     font-size: large;
+     margin: 0;
+ }
+
+ .Description {
+     font-size: small;
+     margin: 0;
+     color: rgb(138, 138, 138);
+ }
+
+ .Resume {
+     margin-left: 23px;
+ }

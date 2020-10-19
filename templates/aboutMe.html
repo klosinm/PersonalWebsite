@@ -1,5 +1,41 @@
 {% extends "base.html" %}
-{% block title %}Welcome!{% endblock %}
+{% block title %}About Me{% endblock %}
 {% block content %}
+<style>
+    .image-txt-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 15px;
+    }
+
+    .imageMonica {
+        width: 36%;
+        margin: 15px;
+    }
+</style>
+
+<div class="image-txt-container">
+    <image src="{{url_for('static', filename='Images/cool.jpeg')}}" class="imageMonica">
+        <medium>
+        Hello! I'm currently working for Bee Informed Partnership, a  where I will be implmenting a web-based dashboard to display beehive data.
+        I'm also doing research with one of my universities professors, where we will be further developing techniques to detect communities in various social networks.
+        <br>
+        I will be graduating from Grand Valley State University May 2021 with a major in Computer Science and a minor in Data
+        Science.
+        <br><br>
+        My favorite project I've done so far was designing and developing a dashboard to monitor CPU usage of jobs running in a Companys hardware environment. 
+        My mentor gave me the freedom to create a solution independlty, which allowed me to learn a lot of new tools and concepts. I ended up using Power BI 
+        with TeraData SQL backend to build a report that would monitor the daily CPU usage of every job running through the companies hardware, which would allow
+        my team to go to the manager of that project and inform them they were using a lot of CPU, to help that team make their code more efficent, which then caused
+        less strain on the hardware.
+        <br><br>
+        I'm passonate about being involved in my community and supporting others. I created a coding workshop
+        for high school women to learn how to code in Java, and contiue to work on this project virutally with them.
+        </medium>
+</div>
+
+
+
 
 {% endblock %}

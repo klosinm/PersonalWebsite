@@ -1,12 +1,8 @@
 {% extends "base.html" %}
-{% block title %}Select Projects{% endblock %}
+{% block title %}Portfolio{% endblock %}
 {% block content %}
 
 <style>
-
-* {
-  box-sizing: border-box;
-}
 
 .row {
   display: flex;
@@ -14,16 +10,16 @@
 
 /* Create two equal columns that sits next to each other */
 .column {
-    margin-left: 20px;
+    margin-left: 25px;
   flex: 20%;
   padding: 10px;
  
 }
-
-  .subHeader{
+.subHeader{
         font-size:large; 
         margin:0;
-    }
+}
+
 .description{
      font-size:small; 
         margin:0; 
@@ -35,11 +31,21 @@
     margin:10px;
 }
 
+ .Header {
+     font-size: x-large;
+     color: #3f8cff;
+     font-style: bold;
+ }
+
+ .Resume {
+     margin-left: 23px;
+ }
 </style>
 
 
+<div class="Resume Header"> Select Projects</div>
 <div class="row">
-   
+
     <div  class="column">
         <img src="{{url_for('static', filename='Images/hoya.jpg')}}" width="50%" />
         
@@ -48,14 +54,12 @@
         <a href="https://myplantbud.herokuapp.com" class="btn btn-primary" role="button" aria-pressed="true">Go to Site</a>
     </div>
     <div class="column">
-        <img src="{{url_for('static', filename='Images/hangman.png')}}" width="62%" />
+        <img src="{{url_for('static', filename='Images/hangman.png')}}" width="52%" />
         <h3 class="subHeader"> Hangman Bot</h3>
         <h2 class="description"> A discord bot that allows one to play hangman in a discord <br> server either alone or with friends.</h2>
-        <a href="https://github.com/klosinm/HangmanBot" class="btn btn-primary" role="button" aria-pressed="true">Source Code</a>
+        <a href="https://github.com/klosinm/HangmanBot" class="btn btn-primary" role="button" aria-pressed="true">Github Repo</a>
 
     </div>
 </div>
-
-
-
+<br><br>
 {% endblock %}

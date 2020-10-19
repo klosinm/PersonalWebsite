@@ -1,32 +1,41 @@
 {% extends "base.html" %}
 {% block title %}Resume{% endblock %}
 {% block content %}
+
+
 <style>
+ .Header {
+     font-size: x-large;
+     color: #3f8cff;
+     font-style: bold;
+ }
 
-    .Header{
-        font-size:x-large;
-        color:rgb(70, 73, 224);
-    }
+ .subHeader {
+     font-size: large;
+     margin: 0;
+ }
 
-    .subHeader{
-         
-        font-size:large; 
-        margin:0;
-    }
+ .Description {
+     font-size: small;
+     margin: 0;
+     color: rgb(138, 138, 138);
+ }
 
-    .Description{
-       
-        font-size:small; 
-        margin:0; 
-        color:rgb(138, 138, 138);
-    }
-
-    .Resume{
-        margin-left: 23px;
-    }
-
+ .Resume {
+     margin-left: 23px;
+ }
 </style>
 
+<div class="Resume">  
+    <div class="Header"> Research</div>
+    <h5 class="subHeader"> Network Analysis (in progress)</h5>
+    <h5 class="Description">Research Assistant | Grand Rapids, MI | September 2020 – present</h5>
+    <small> Collaborating on further developing techniques to detect communities in various social networks and
+        implementing
+        algorithms in Java. <br>Currently: conducting a literature review of relevant research. </small>
+
+</div>
+<hr>
 <div class="Resume">
     <div class="Header"> Work Experience</div> 
     <h5 class="subHeader"> Bee Informed Partnership</h5>
@@ -53,5 +62,30 @@
     </small>
     <br><br>
 </div>
+
+<hr>
+<div class="Resume">
+    <div class="Header"> Leadership</div>
+    <h5 class="subHeader"> Robotics</h5>
+    <h5 class="Description">Programming Mentor (February 2020 – present) | Team Programmer (August 2014 – May 2017)</h5>
+    <small> Coding mentor for the Allendale TriSonics team. <br> Developed and implemented a coding workshop and taught 10 high school women with no previous coding experiences to learn
+    how to use Java and create a simple math program. </small>
+    <br><br>
+    <h5 class="subHeader"> Women in Computing</h5>
+    <h5 class="Description">Vice President (August 2020 – present) | Social Media Coordinator (August 2019 – April 2020) | General Member (August
+    2017 - April 2019)</h5>
+    <small> Designed, planned, and led a HTML workshop to teach 6 women introductory skills in HTML and CSS. <br> Collaborated with
+    various local companies to come speak to Women in Computing. Set-up a club 
+    <a href="https://www.instagram.com/gvsuwic/">Instagram</a>to promote club events.
+    </small>
+    <br><br>
+    <h5 style="font-size:large; margin:0"> Stand Up Comedy Club</h5>
+    <h5 class="Description">General Officer (August 2018 – April 2020) | General Member (August 2017 - April 2018)</h5>
+    <small> Brainstormed with members about sets and offered critique on specific jokes. <br> Performed original content in monthly
+    stand-up comedy shows in front of 80+ people.
+    </small>
+    <br><br>
+</div>
+
 
 {% endblock %}
