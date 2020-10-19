@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Resume{% endblock %}
+{% block content %}
+<style>
+
+    .Header{
+        font-size:x-large;
+        color:rgb(70, 73, 224);
+    }
+
+    .subHeader{
+         
+        font-size:large; 
+        margin:0;
+    }
+
+    .Description{
+       
+        font-size:small; 
+        margin:0; 
+        color:rgb(138, 138, 138);
+    }
+
+    .Resume{
+        margin-left: 23px;
+    }
+
+</style>
+
+<div class="Resume">
+    <div class="Header"> Work Experience</div> 
+    <h5 class="subHeader"> Bee Informed Partnership</h5>
+    <h5 class="Description">Developer | Grand Rapids, MI | October 2020 – present</h5>
+    <small> Implementing a web-based dashboard with React Native and JavaScript to display beehive data related to the bee farms. </small>
+    <br><br>
+    <h5 class="subHeader"> Atomic Object</h5>
+    <h5 class="Description">Intern | Grand Rapids, MI | May 2020 – August 2020</h5>
+    <small> Evaluated JavaScript code for a mobile application used for parents to find ride for their children; composed a report
+    of current bugs in application. <br>
+    Collaboratively designed and developed front-end interface of a window desktop application installer in C#.
+    </small>
+    <br><br>
+    <h5 style="font-size:large; margin:0"> Meijer</h5>
+    <h5 class="Description">Business Intelligence Intern | Walker, MI | May 2019 – August 2019</h5>
+    <small> Independently designed and developed a dashboard to monitor daily CPU usage of all jobs running in Meijer’s Teradata
+    environment.<br>
+    Queried databases to show the history of daily CPU usage per jobs in SQL.<br>
+    Implemented in R self-organizing maps to model the CPU usage trends across the Teradata environment. Studied various
+    statistical techniques for clustering data, including self-organizing maps.<br>
+    Developed and designed an interactive dashboard to monitor daily CPU usage per job in Power BI. Dashboard can derive
+    insights on which jobs are causing the most harm to the Teradata environment.<br>
+    Dashboard is still used and updated today to find jobs using high CPU to help optimize them to use less CPU.
+    </small>
+    <br><br>
+</div>
+
+{% endblock %}

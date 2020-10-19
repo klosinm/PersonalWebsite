@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.2.min.js" integrity="sha384-JayppSWSRBsibIZqI8S4vAb1oFgLL0uhNvSn8cmArlOvYOwfFjYeyY5UWwJ+K0SU" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="d01c13b0-8573-4f5d-9981-f9eadf74c20a" data-root-id="7020"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="7137">
+          {"4e52f561-94eb-4788-ace4-f12693f7669d":{"roots":{"references":[{"attributes":{"axis_label":"% Approval Rating of Candy","formatter":{"id":"7059"},"ticker":{"id":"7035"}},"id":"7034","type":"LinearAxis"},{"attributes":{},"id":"7059","type":"BasicTickFormatter"},{"attributes":{},"id":"7063","type":"UnionRenderers"},{"attributes":{},"id":"7032","type":"CategoricalTicker"},{"attributes":{},"id":"7042","type":"ResetTool"},{"attributes":{"axis":{"id":"7031"},"grid_line_color":null,"ticker":null},"id":"7033","type":"Grid"},{"attributes":{},"id":"7039","type":"WheelZoomTool"},{"attributes":{},"id":"7061","type":"CategoricalTickFormatter"},{"attributes":{"overlay":{"id":"7044"}},"id":"7040","type":"BoxZoomTool"},{"attributes":{},"id":"7029","type":"LinearScale"},{"attributes":{},"id":"7043","type":"HelpTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"7044","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#F88049"},"line_alpha":{"value":0.1},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"7054","type":"VBar"},{"attributes":{},"id":"7041","type":"SaveTool"},{"attributes":{},"id":"7035","type":"BasicTicker"},{"attributes":{"source":{"id":"7052"}},"id":"7056","type":"CDSView"},{"attributes":{"fill_color":{"value":"#F88049"},"top":{"field":"top"},"width":{"value":0.75},"x":{"field":"x"}},"id":"7053","type":"VBar"},{"attributes":{"axis":{"id":"7034"},"dimension":1,"ticker":null},"id":"7037","type":"Grid"},{"attributes":{},"id":"7062","type":"Selection"},{"attributes":{"below":[{"id":"7031"}],"center":[{"id":"7033"},{"id":"7037"}],"left":[{"id":"7034"}],"outline_line_color":"purple","plot_height":500,"renderers":[{"id":"7055"}],"title":{"id":"7021"},"toolbar":{"id":"7045"},"x_range":{"id":"7023"},"x_scale":{"id":"7027"},"y_range":{"id":"7025"},"y_scale":{"id":"7029"}},"id":"7020","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"7061"},"major_label_orientation":0.7853981633974483,"ticker":{"id":"7032"}},"id":"7031","type":"CategoricalAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"7038"},{"id":"7039"},{"id":"7040"},{"id":"7041"},{"id":"7042"},{"id":"7043"}]},"id":"7045","type":"Toolbar"},{"attributes":{"text":"Top 10 Favorite Candys"},"id":"7021","type":"Title"},{"attributes":{"data_source":{"id":"7052"},"glyph":{"id":"7053"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"7054"},"selection_glyph":null,"view":{"id":"7056"}},"id":"7055","type":"GlyphRenderer"},{"attributes":{"data":{"top":{"__ndarray__":"73IR34kLVUCWOzPBcHdUQP8Iw4AlaVRAKe0NvjAxU0CKqIk+HytTQJIFTODWW1JAuAchIF9GUkB8Rbde0zhSQE9AE2HD3VFAMSb9vRSvUUCgjPFh9l5RQDBl4ICW5lBAfVpFf2jCUEAp7Q2+ML5QQGvxKQDGpFBAZ7gBnx+eUEBKJTyh121QQJgXYB+dFlBAbcoV3uWKT0CtqpffaSRPQPBv0F59Zk5AmueIfJfuTUAKMCx/vsNNQNzu5T45nk1A8tJNYhCcTEDzAuyjU49MQNTTR+APdUxA4dOcvMg+TECCk23gDrBLQMqjG2FRrUtAHeG04EWNS0BuS+SCM4hLQOmcn+I4bktAJ/kRv2JDS0AE6zh+qHRKQFqdnKG4aUpARN0HILUrSkDU8ZiByrRJQIXtJ2N8LElAQGt+/KXTSEBINIEiFsNIQNwwCoLHfUhA09wKYTXqR0AB3CxeLJZHQImxTL9EZEdAtp4hHLM0R0C9i/fj9iVHQAVpxqLpDkdApbxWQnf/RkBbsirCTd5GQFNb6iCvu0ZAaAOwAREwRkAt6pPcYYtFQHHl7J3RiEVAHcwmwLBsRUBkA+li0yJFQGK4OgDiFkVAbsFSXcDzREDFdvcA3bFEQDfdskP8oURAAP2+f/O6Q0Ap7Q2+MLlDQEsfuqC+l0NAyXN9Hw6SQ0CjcajfhYFDQOqxLQPOfENAqDtPPGcBQ0Crs1pgj/FCQJpcjIF13EJA3/dvXpysQkA4v2GiQQJCQNKOG343pUFAI9v5fmpcQUDT1ohgHEpBQFth+l5DQkFAArhZvFgUQUCyLm6jAbhAQMO4G0RrIUBAD0WBPpEdQEBSfecXJbQ9QCY8odefIDxAKGa9GMpNO0DeyhKdZYY4QOF7f4P2ajdAZJEm3gFyNkA=","dtype":"float64","order":"little","shape":[85]},"x":["Reese\u00d5s Peanut Butter cup","Reese\u00d5s Miniatures","Twix","Kit Kat","Snickers","Reese\u00d5s pieces","Milky Way","Reese\u00d5s stuffed with pieces","Peanut butter M&amp;M\u00d5s","Nestle Butterfinger"]},"selected":{"id":"7062"},"selection_policy":{"id":"7063"}},"id":"7052","type":"ColumnDataSource"},{"attributes":{},"id":"7038","type":"PanTool"},{"attributes":{"factors":["Reese\u00d5s Peanut Butter cup","Reese\u00d5s Miniatures","Twix","Kit Kat","Snickers","Reese\u00d5s pieces","Milky Way","Reese\u00d5s stuffed with pieces","Peanut butter M&amp;M\u00d5s","Nestle Butterfinger"]},"id":"7023","type":"FactorRange"},{"attributes":{},"id":"7027","type":"CategoricalScale"},{"attributes":{"start":0},"id":"7025","type":"DataRange1d"}],"root_ids":["7020"]},"title":"Bokeh Application","version":"2.2.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('7137').textContent;
+                  var render_items = [{"docid":"4e52f561-94eb-4788-ace4-f12693f7669d","root_ids":["7020"],"roots":{"7020":"d01c13b0-8573-4f5d-9981-f9eadf74c20a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
