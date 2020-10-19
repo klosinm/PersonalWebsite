@@ -16,8 +16,11 @@
 
 footer {
 
-  background: #8bd2e7;
- border-top: 3px solid #6abcd4;   
+    height: 150px;
+
+  background: #3f8cff;
+  color: white;
+ border-top: 5px solid #0748aa;   
 }
 
 </style>
@@ -27,7 +30,7 @@ footer {
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
 </head>
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #8bd2e7;">
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #f1f1f1;">
     <a class="navbar-brand" href="#">MK</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,13 +42,13 @@ footer {
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="/aboutMe">About Me</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/resume">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact Me!</a>
@@ -55,7 +58,7 @@ footer {
 </nav>
 
 <body style="background-color: #f3f6f7">
-    <h1 style="margin: 10px;margin-left: 50px"> {% block title %}{% endblock %}</h1>
+    <h1 style="margin: 10px;margin-left: 50px; text-align: center;"> {% block title %}{% endblock %}</h1>
 
     
     

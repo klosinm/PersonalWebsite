@@ -1,8 +1,14 @@
 {% extends "base.html" %}
-{% block title %}Welcome!{% endblock %}
+{% block title %}Hello!{% endblock %}
 {% block content %}
-<h1> welcome  <br>
-    to website
-</h1>
-<img src="Images/MonicaLinkPhoto2020.png">
+<h3 style="margin-left: 10px">   
+    My name is Monica, I am a senior studying computer science and data science.
+</h3>
+
+<image src="{{url_for('static', filename='Images/Monica.jpeg')}}" style="width: 30%;display: block;margin-left: auto;
+  margin-right: auto;
+  width: 50%;">
+
+
+<br><br>
 {% endblock %}

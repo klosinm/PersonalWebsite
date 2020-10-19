@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Select Projects{% endblock %}
+{% block content %}
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    margin-left: 20px;
+  flex: 20%;
+  padding: 10px;
+ 
+}
+
+  .subHeader{
+        font-size:large; 
+        margin:0;
+    }
+.description{
+     font-size:small; 
+        margin:0; 
+        color:rgb(138, 138, 138);
+}
+
+.imageProject{
+
+    margin:10px;
+}
+
+</style>
+
+
+<div class="row">
+   
+    <div  class="column">
+        <img src="{{url_for('static', filename='Images/hoya.jpg')}}" width="50%" />
+        
+        <h3 class="subHeader"> My Plant Bud</h3>
+        <h2 class="description"> Users can learn about 6 unique plants and take a quiz <br> to find out which plant is best suited for their lifestyle.</h2>
+        <a href="https://myplantbud.herokuapp.com" class="btn btn-primary" role="button" aria-pressed="true">Go to Site</a>
+    </div>
+    <div class="column">
+        <img src="{{url_for('static', filename='Images/hangman.png')}}" width="62%" />
+        <h3 class="subHeader"> Hangman Bot</h3>
+        <h2 class="description"> A discord bot that allows one to play hangman in a discord <br> server either alone or with friends.</h2>
+        <a href="https://github.com/klosinm/HangmanBot" class="btn btn-primary" role="button" aria-pressed="true">Source Code</a>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
