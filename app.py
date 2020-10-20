@@ -37,6 +37,13 @@ def user(name):
     return f"Whoops! {name} is not a valid page. Click here to go back home "
 
 
+@app.route('/test')
+def your_view():
+    your_list = [1, 2, 3, 4]
+    your_lista = ["a", "b", "c", "d"]
+    return render_template('your_view.html', your_list=your_list, alpha=your_lista)
+
+
 if __name__ == "__main__":
     app.run('0.0.0.0', 9001)
     #app.run(debug=True)
