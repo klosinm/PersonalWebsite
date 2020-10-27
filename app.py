@@ -45,6 +45,7 @@ def your_view():
 
 
 if __name__ == "__main__":
+    #run via python3 app.py
     app.run('0.0.0.0', 9001)
     #app.run(debug=True)
 
